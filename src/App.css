@@ -1,0 +1,260 @@
+/* Import a futuristic font */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Orbitron', sans-serif;
+  background-color: #0b0c10;
+  color: #ddd;
+  overflow-x: hidden;
+}
+
+/* ----------------- HERO SECTION ------------------ */
+.hero-section {
+  position: relative;
+  height: 100vh;
+  background: radial-gradient(ellipse at bottom, #090a0f  0%, #090a0f 100%);
+  overflow: hidden;
+  color: #ddd;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+@keyframes starsMove {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-1000px);
+  }
+}
+
+.glow-title {
+  font-size: 5rem;
+  color: #c7a4ff;
+  text-shadow:
+    0 0 10px #c7a4ff,
+    0 0 20px #bb88ff,
+    0 0 30px #a06eff,
+    0 0 40px #8b57ff,
+    0 0 50px #733fff;
+  z-index: 1;
+}
+
+.glow-slogan {
+  font-size: 1.5rem;
+  margin: 15px 0 40px;
+  color: #ddd;
+  text-shadow: 0 0 10px #b29eff;
+  z-index: 1;
+}
+
+.glow-button {
+  background: linear-gradient(45deg, #7e5aff, #b37eff);
+  border: none;
+  color: white;
+  padding: 14px 36px;
+  font-size: 1.25rem;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow:
+    0 0 10px #8a6aff,
+    0 0 20px #8a6aff,
+    0 0 30px #a27fff,
+    0 0 40px #9a74ff;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  z-index: 1;
+}
+
+.glow-button:hover {
+  box-shadow:
+    0 0 20px #a287ff,
+    0 0 30px #9f7fff,
+    0 0 40px #c4b4ff,
+    0 0 50px #bcaeff;
+  transform: scale(1.05);
+}
+
+/* ----------------- SECTIONS ------------------ */
+
+section {
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 0 20px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+h2 {
+  font-size: 3rem;
+  margin-bottom: 25px;
+  color: #a187ff;
+  text-shadow: 0 0 15px #b9a9ff;
+}
+
+/* Glassmorphism card style */
+.card {
+  background: rgba(30, 20, 50, 0.45);
+  border-radius: 20px;
+  padding: 20px;
+  color: #ccc;
+  box-shadow:
+    0 0 10px rgba(128, 79, 255, 0.4),
+    0 0 30px rgba(128, 79, 255, 0.3);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow:
+    0 0 15px #b47eff,
+    0 0 40px #b47eff;
+}
+
+/* About Us */
+.vision-mission-cards {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.vision-mission-cards .card {
+  flex: 1;
+}
+
+/* What We Do */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  margin-top: 30px;
+}
+
+.service-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service-icon {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: #bb88ff;
+  text-shadow: 0 0 8px #b47eff;
+}
+
+/* Meet the Team */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.team-card {
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.team-card:hover {
+  box-shadow:
+    0 0 25px #b47eff,
+    0 0 45px #b47eff;
+  border-radius: 20px;
+}
+
+/* Contact / Join */
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px 15px;
+  border-radius: 12px;
+  border: none;
+  background: rgba(20, 10, 40, 0.7);
+  color: white;
+  font-size: 1rem;
+  box-shadow:
+    inset 0 0 8px #b47eff;
+  resize: none;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #d3caff;
+}
+
+/* Footer */
+footer {
+  background-color: #0a0a0a;
+  border-top: 3px solid #9b7aff;
+  padding: 25px 20px;
+  text-align: center;
+  color: #9b7aff;
+  font-size: 0.9rem;
+  margin-top: 60px;
+  user-select: none;
+  position: relative;
+  z-index: 1;
+}
+
+.footer-content {
+  max-width: 1100px;
+  margin: 0 auto 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-nav a {
+  margin: 0 15px;
+  color: #b49fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+  color: #d8baff;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .vision-mission-cards {
+    flex-direction: column;
+  }
+
+  .services-grid,
+  .gallery-grid,
+  .team-grid,
+  .testimonials-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .footer-content {
+    flex-direction: column;
+  }
+}
