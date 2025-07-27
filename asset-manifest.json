@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Glow_Team/static/css/main.c4298da8.css",
+    "main.js": "/Glow_Team/static/js/main.d6104e2c.js",
+    "static/js/453.8980f0a7.chunk.js": "/Glow_Team/static/js/453.8980f0a7.chunk.js",
+    "index.html": "/Glow_Team/index.html",
+    "main.c4298da8.css.map": "/Glow_Team/static/css/main.c4298da8.css.map",
+    "main.d6104e2c.js.map": "/Glow_Team/static/js/main.d6104e2c.js.map",
+    "453.8980f0a7.chunk.js.map": "/Glow_Team/static/js/453.8980f0a7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c4298da8.css",
+    "static/js/main.d6104e2c.js"
+  ]
+}
